@@ -1,0 +1,30 @@
+---
+export interface Props {
+  coverUrl: string;
+  videoSrc: string;
+}
+
+const { coverUrl, videoSrc } = Astro.props;
+---
+
+<header class="flex flex-col items-center">
+  <div class="w-full" x-data="{ showVideo: false }">
+    <img
+      x-show="!showVideo"
+      @click="showVideo = true"
+      src={coverUrl}
+      alt="Video Thumbnail"
+      class="hidden object-cover w-full h-full mt-10 md:block"
+    />
+    <iframe
+      x-show="showVideo"
+      loading="lazy"
+      :src={`showVideo ? '${videoSrc}' : ''`}
+      class="w-full mt-10 m-auto hidden md:block"
+      :style="showVideo ? 'height: 30rem;' : 'height: 20rem;'"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <script is:inline src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+</header>
