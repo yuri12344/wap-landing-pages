@@ -1,0 +1,34 @@
+---
+// HeroSectionWithImageAndText.astro
+// A reusable component for displaying a hero section with image, title, subtitle, and description
+
+export interface Props {
+  desktopImageSrc?: string;
+  mobileImageSrc?: string;
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  backgroundColor?: string;
+}
+
+const {
+  desktopImageSrc = "/src/assets/extratora-multi-flor/desktop/extratora_show.png",
+  mobileImageSrc = "/src/assets/extratora-multi-flor/mobile/extratora_show_mobile.png",
+  title = "Extratora WAP MULTI FLOOR",
+  subtitle = "Economize tempo limpando seu piso!",
+  description = "A extratora WAP MULTI FLOOR é a solução ideal para uma limpeza eficiente e rápida dos seus pisos. Com design ergonômico e tecnologia avançada, ela proporciona resultados superiores em menos tempo.",
+  backgroundColor = "bg-blue-600"
+} = Astro.props;
+---
+
+<section class={`flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-8 ${backgroundColor}`}>
+  <div class="w-full md:w-1/2 text-white">
+    <h1 class="text-3xl md:text-4xl font-bold mb-2">{title}</h1>
+    <h2 class="text-xl md:text-2xl mb-4">{subtitle}</h2>
+    <p class="text-sm md:text-base mb-6 max-w-md">{description}</p>
+  </div>
+  <div class="w-full md:w-1/2">
+    <img src={desktopImageSrc} alt={title} class="hidden md:block w-full max-w-md mx-auto">
+    <img src={mobileImageSrc} alt={title} class="md:hidden w-full max-w-xs mx-auto">
+  </div>
+</section>

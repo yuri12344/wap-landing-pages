@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'UniSans';
+    src: url('/fonts/Uni_Sans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansBold';
+    src: url('/fonts/Uni_Sans_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansLight';
+    src: url('/fonts/Uni_Sans_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansHeavy';
+    src: url('/fonts/Uni_Sans_Heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansSemiBold';
+    src: url('/fonts/Uni_Sans_SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansThin';
+    src: url('/fonts/Uni_Sans_Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansBook';
+    src: url('/fonts/Uni_Sans_Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansItalic';
+    src: url('/fonts/Uni_Sans_Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansBoldItalic';
+    src: url('/fonts/Uni_Sans_Bold_Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansLightItalic';
+    src: url('/fonts/Uni_Sans_Light_Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansHeavyItalic';
+    src: url('/fonts/Uni_Sans_Heavy_Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansThinItalic';
+    src: url('/fonts/Uni_Sans_Thin_Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UniSansSemiBoldItalic';
+    src: url('/fonts/Uni_Sans_SemiBold_Italic.ttf') format('truetype');
+}

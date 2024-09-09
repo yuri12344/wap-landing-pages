@@ -1,0 +1,78 @@
+<section class="p-8 border">
+    <h1 class="text-3xl font-sans-bold mb-6 text-center">Font Family Show Case</h1>
+    <div class="flex justify-center mb-4">
+        <button id="toggleTable" class="w-[20rem] p-2 border rounded bg-white text-xl font-sans-bold">
+            Show
+        </button>
+    </div>
+    <table id="fontTable" class="w-full border-collapse hidden">
+        <tbody>
+            <tr>
+                <td class="border p-2 font-sans text-xl">UniSans</td>
+                <td class="border p-2 font-sans text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-bold text-xl">UniSansBold</td>
+                <td class="border p-2 font-sans-bold text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-light text-xl">UniSansLight</td>
+                <td class="border p-2 font-sans-light text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-heavy text-xl">UniSansHeavy</td>
+                <td class="border p-2 font-sans-heavy text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-semibold text-xl">UniSansSemiBold</td>
+                <td class="border p-2 font-sans-semibold text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-thin text-xl">UniSansThin</td>
+                <td class="border p-2 font-sans-thin text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-italic text-xl">UniSansItalic</td>
+                <td class="border p-2 font-sans-italic text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-bold-italic text-xl">UniSansBoldItalic</td>
+                <td class="border p-2 font-sans-bold-italic text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-light-italic text-xl">UniSansLightItalic</td>
+                <td class="border p-2 font-sans-light-italic text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-heavy-italic text-xl">UniSansHeavyItalic</td>
+                <td class="border p-2 font-sans-heavy-italic text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-thin-italic text-xl">UniSansThinItalic</td>
+                <td class="border p-2 font-sans-thin-italic text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-semibold-italic text-xl">UniSansSemiBoldItalic</td>
+                <td class="border p-2 font-sans-semibold-italic text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-sans-book text-xl">UniSansBook</td>
+                <td class="border p-2 font-sans-book text-xl">Lorem ipsum dolor sit amet.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleButton = document.getElementById('toggleTable');
+        const fontTable = document.getElementById('fontTable');
+
+        if (toggleButton && fontTable) {
+            toggleButton.addEventListener('click', () => {
+                fontTable.classList.toggle('hidden');
+                toggleButton.textContent = fontTable.classList.contains('hidden') ? 'Show' : 'Hide';
+            });
+        }
+    });
+</script>

@@ -1,0 +1,53 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/headers/Header.astro';
+import { HeroSection } from '@/components/HeroSection.astro';
+
+const components = [
+  {
+    name: 'Header',
+    component: Header,
+    props: {
+      desktopImageSrc: "https://placehold.co/600x400",
+      mobileImageSrc: "https://placehold.co/400x300",
+      title: "Example Header",
+      code: "HDR001",
+      subtitle: "Header Subtitle",
+      descriptionDesktop: "This is a desktop description for the header component.",
+      descriptionMobile: "This is a mobile description for the header component."
+    }
+  },
+  {
+    name: 'HeroSection',
+    component: HeroSection,
+    props: {
+      title: "Example Hero",
+      subtitle: "Hero Subtitle",
+      desktopImageSrc: "https://placehold.co/1200x600",
+      mobileImageSrc: "https://placehold.co/600x400",
+      alt: "Hero Image"
+    }
+  }
+];
+---
+
+<Layout title="Component Visualizer">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Astro Component Visualizer</h1>
+    
+    {components.map((item) => (
+      <div class="mb-12 border-b pb-8">
+        <h2 class="text-2xl font-semibold mb-4">{item.name}</h2>
+        <div class="bg-gray-100 p-4 rounded-lg mb-4">
+          <item.component {...item.props} />
+        </div>
+        <details>
+          <summary class="cursor-pointer text-blue-600 hover:text-blue-800">View Props</summary>
+          <pre class="bg-gray-200 p-4 rounded-lg mt-2 overflow-x-auto">
+            <code>{JSON.stringify(item.props, null, 2)}</code>
+          </pre>
+        </details>
+      </div>
+    ))}
+  </main>
+</Layout>

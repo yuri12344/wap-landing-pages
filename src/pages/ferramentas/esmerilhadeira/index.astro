@@ -1,0 +1,263 @@
+---
+const productName = 'Esmerilhadeira Angular 5"';
+import '@/styles/global.css';
+
+import Header from '@/components/headers/Header.astro';
+import VideoHeader from '@/components/VideoHeader.astro';
+import SvgTitleAndDescription from '@/components/SvgTitleAndDescription.astro';
+import ImageHero from '@/components/ImageHero.astro';
+import SingleLargeImage from '@/components/SingleLargeImage.astro';
+
+import TextAndImageWithDescription from '@/components/TextAndImageWithDescription.astro';
+import MosaicoWithImageAndDescription from '@/components/MosaicoWithImageAndDescription.astro';
+
+
+---
+
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas - Sua Loja de Ferramentas Online</title>
+    <meta name="description" content="Encontre as melhores ferramentas para seus projetos em nossa loja online. Amplas opções de ferramentas elétricas e manuais.">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" />
+</head>
+
+<body class="m-0 flex flex-col w-full items-center py-8 [&>*]:max-w-6xl [&>*]:w-full md:[&>*]:mb-20 [&>*]:mb-8 overflow-x-hidden ">
+    <VideoHeader
+        coverUrl="/src/assets/replied/_video_cover.png" 
+        videoSrc="https://www.youtube.com/embed/leZQlQpRmRE?si=jcF9plvjyXxrCe8z?enablejsapi=1&autoplay=1">
+    </VideoHeader>
+    <Header
+        desktopImageSrc="/src/assets/esmerilhadeira/desktop/esmerilhadeira_show.png"
+        mobileImageSrc="/src/assets/esmerilhadeira/mobile/esmerilhadeira_show_mobile.png"
+        title="Esmerilhadeira Angular 5"
+        code="WAP WF ES01"
+        subtitle="Transforme desafios em resultados profissionais"
+        descriptionDesktop="Pronto para transformar projetos desafiadores em resultados profissionais? Realize tarefas de corte ou desbaste com confiança, durabilidade e alto desempenho. Garanta excelência em todos detalhes do seu trabalho usando uma ferramenta elétrica versátil."
+        descriptionMobile="Pronto para transformar projetos desafiadores em resultados profissionais? Realize tarefas de corte ou desbaste com confiança, durabilidade e alto desempenho."
+    />
+
+    <ImageHero
+        title="Precisão, segurança e"
+        subtitle="conforto!"
+        desktopImageSrc="/src/assets/esmerilhadeira/desktop/show-esmerilhadeira-desk.png"
+        mobileImageSrc="/src/assets/esmerilhadeira/mobile/show-esmerilhadeira-mob.png"
+        alt={productName}
+    />
+
+    <div class="flex flex-col md:flex-row items-center md:space-x-10 mt-10 md:mt-0">
+      <img src="/src/assets/esmerilhadeira/replied/i01-replied.png" alt={productName} class="w-full md:hidden max-w-[90%]" />
+      <div class="md:w-1/2 order-2">
+        <img src="/src/assets/esmerilhadeira/replied/i01-replied.png" alt={productName} class="rounded-[4rem] w-full md:block hidden" />
+      </div>
+      <div class="md:w-1/2 order-1 justify-center items-center -mt-5 max-w-[90%]">
+        <h2>Efiaciência nos acortes em estruturas metálicas</h2>
+        <div class="mt-5 md:mt-5 --body  m-auto text-start">
+          Com encaixes laterais e superior, a empunhadura auxiliar da <span class="font-sans-bold">ESMERILHADEIRA ANGULAR 5" WAP WF ES01</span> garante precisão e segurança durante a operação. Ao ajustá-la, você obtém o controle total da tarefa em diferentes ângulos e posições de trabalho.
+          <br><br>
+          A ferramenta possui <span class="font-sans-bold">950W de potência</span> para impulsionar seus trabalhos de corte e desbaste de maneira precisa, com eficiência do início ao fim das tarefas em peças de aço e estruturas metálicas em geral.
+        </div>
+      </div>
+    </div>
+
+    <SingleLargeImage
+        desktopImage="/src/assets/esmerilhadeira/desktop/i01-desktop.png"
+        mobileImage="/src/assets/esmerilhadeira/mobile/i01-mobile.png"
+        alt={productName}
+        class="relative"
+    />
+
+    <section class="grid md:grid-cols-3 gap-8 h-auto md:-mt-20 mt-10 ">
+        <div class="flex flex-col justify-between md:translate-y-[10rem] md:ml-10 space-y-10">
+            <SvgTitleAndDescription 
+                svg="/src/assets/replied/svgs/black/gears.svg"
+                title="13.000 RPM"
+                description="A velocidade de rotação por minuto garante a potência necessária para cortes precisos e fáceis."
+                alignment="left"
+            />
+            <SvgTitleAndDescription 
+                svg="/src/assets/replied/svgs/black/finger_point.svg"
+                title="Empunhadura auxiliar"
+                description="Controle com precisão a ferramenta durante o uso com um ponto extra de apoio seguro."
+                alignment="left"
+                class="md:translate-y-5"
+            />
+        </div>
+        <div class="flex justify-center items-center">
+            <!--Desktop-->
+            <img src="/src/assets/esmerilhadeira/desktop/i02-desktop.png" alt={productName} class="h-[110%] hidden md:block ">
+            <!--Mobile-->
+            <img src="/src/assets/esmerilhadeira/mobile/i02-mobile.png" alt={productName} class="w-[80%] block md:hidden">
+        </div>
+        <div class="flex flex-col justify-between md:translate-y-[10rem] md:mr-10 space-y-10">
+            <SvgTitleAndDescription 
+                svg="/src/assets/replied/svgs/black/tool.svg"
+                title="Chave para troca de disco"
+                description="Substitua rapidamente os discos de corte, lixamento ou polimento de acordo com a necessidade de cada projeto."
+                alignment="right"
+            />
+            <SvgTitleAndDescription 
+                svg="/src/assets/replied/svgs/black/shield.svg"
+                title="Protetor de disco"
+                description="Protege você contra fragmentos e detritos que podem ser lançados durante o uso."
+                alignment="right"
+                class="md:translate-y-5"
+            />
+        </div>
+    </section>
+
+    <section class="md:mt-[20rem]">
+      <TextAndImageWithDescription
+          desktopImage="/src/assets/esmerilhadeira/desktop/i03-desktop.png"
+          mobileImage="/src/assets/esmerilhadeira/mobile/i03-mobile.png"
+          alt={productName}
+          title="Trabalhe de maneira contínua, sem interrupções frequentes"
+          description={`
+            A <span class="font-sans-bold">esmerilhadeira angular</span> conta com um <span class="font-sans-bold">botão de acionamento para uso contínuo</span>, que excluí a necessidade de manter o gatilho pressionado. Assim, a ferramenta continua operando na velocidade certa, sem causar fadiga nas mãos durante longos períodos de uso.
+            <br><br>
+            Para o momento da troca de discos, o <span class="font-sans-bold">botão de trava de eixo</span> permite ajustar o equipamento de maneira rápida e segura. Realize suas tarefas com confiança em diversas superfícies e materiais!
+          `}
+          position="left"
+      />
+    </section>
+
+    <MosaicoWithImageAndDescription
+        title="Design ergonômico para profissionais exigentes"
+        description={`
+          <div class="--body max-w-[90%] md:max-w-[60%] text-center">
+            Projetada para proporcionar conforto independente do projeto, a ferramenta possui um <span class="font-sans-bold">design compacto e fácil de manusear</span>, simplificando a operação. <span class="font-sans-bold">Ergonômica</span>, ela é a melhor escolha para profissionais e entusiastas do DIY que valorizam qualidade e praticidade.
+            <br><br>
+            Para facilitar ainda mais sua rotina de manutenção e construção, a <span class="font-sans-bold">esmerilhadeira angular WAP</span> conta com um kit completo de acessórios:
+          </div>
+        `}
+        desktopImage="/src/assets/esmerilhadeira/desktop/i04-desktop.png"
+        mobileImage="/src/assets/esmerilhadeira/mobile/i04-mobile.png"
+        alt={productName}
+    />
+
+    <TextAndImageWithDescription
+        desktopImage="/src/assets/esmerilhadeira/desktop/i05-desktop.png"
+        mobileImage="/src/assets/esmerilhadeira/desktop/i05-desktop.png"
+        alt="ESMERILHADEIRA ANGULAR 5&quot; WAP WF ES01"
+        title="Menos riscos para mais eficiência"
+        description={`
+          Além de proteger o usuário, as <span class="font-sans-bold">grades anti-poeira</span> da <span class="font-sans-bold">ESMERILHADEIRA ANGULAR 5" WAP WF ES01</span> também protegem seu motor e os componentes internos. O dispositivo facilita a manutenção da ferramenta e melhora o desempenho geral.
+          <br><br>
+          Essencial para minimizar o risco de cortes ou lesões, o <span class="font-sans-bold">protetor de disco</span> do equipamento ainda contribui para o aumento da visibilidade da área de trabalho, permitindo cortes mais precisos.
+        `}
+        position="right"
+    />
+
+    <section class="relative md:bg-[#F0F0F0] flex items-center justify-center rounded-[2rem]">
+        <div class="[display:none] px-8 lg:px-16 sm:block">
+          <div class="relative z-10 [display:none] h-full mt-32 mb-12 md:block">
+            <img src="/src/assets/esmerilhadeira/desktop/i06-desktop.png" alt="Imagem do produto" class="relative h-full" />
+            <div class="absolute top-0 left-0 w-full h-full">
+              <p class="absolute top-[20%] left-[8%] text-end text-[14px] lg:text-[18px] leading-tight --body text-black m-0 max-w-[21%]">
+                Realize a troca do disco com a segurança e a agilidade do <span class="font-sans-bold">botão de trava de eixo</span>.
+              </p>
+              <p class="absolute text-end bottom-[0.5%] left-[13%] text-[14px] lg:text-[18px] leading-tight --body text-black m-0 max-w-[32%]">
+                A <span class="font-sans-bold">empunhadura auxiliar com três posições</span> oferece mais ergonomia, segurança e eficiência durante a rotina de corte e desbaste.
+              </p>
+              <p class="absolute top-[0%] text-end right-[16%] text-[14px] lg:text-[18px] leading-tight --body text-black m-0 max-w-[32%]">
+                O <span class="font-sans-bold">cabo elétrico de 1,8 metros</span> oferece maior alcance maior durante a operação, permitindo maior liberdade de movimento na área de trabalho.
+              </p>
+              <p class="absolute right-[5%] bottom-[33%] text-[14px] lg:text-[18px] leading-tight --body text-black m-0 max-w-[20%]">
+                A <span class="font-sans-bold">grade anti-poeira</span> impede que partículas e detritos entrem no motor da esmerilhadeira, reduzindo o risco de superaquecimento.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="splide__wrapper mt-8 md:hidden w-full">
+          <div class="splide" role="group" aria-label="Características da Esmerilhadeira">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="card rounded-lg overflow-hidden max-w-[80vw] mx-auto">
+                    <img class="w-full h-48 object-cover" src="/src/assets/esmerilhadeira/splide/1.png" alt="Grade anti-poeira" />
+                    <div class="p-4">
+                      <p class="text-center text-sm text-gray-600">
+                        Impede que partículas e detritos entrem no motor da esmerilhadeira, reduzindo o risco de superaquecimento.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card rounded-lg overflow-hidden max-w-[80vw] mx-auto">
+                    <img class="w-full h-48 object-cover" src="/src/assets/esmerilhadeira/splide/2.png" alt="Botão de trava de eixo" />
+                    <div class="p-4">
+                      <p class="text-center text-sm text-gray-600">
+                        Realize a troca do disco com segurança e agilidade.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card rounded-lg overflow-hidden max-w-[80vw] mx-auto">
+                    <img class="w-full h-48 object-cover" src="/src/assets/esmerilhadeira/splide/3.png" alt="Empunhadura auxiliar" />
+                    <div class="p-4">
+                      <p class="text-center text-sm text-gray-600">
+                        Oferece mais ergonomia, segurança e eficiência durante a rotina de corte e desbaste.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card rounded-lg overflow-hidden max-w-[80vw] mx-auto">
+                    <img class="w-full h-48 object-cover" src="/src/assets/esmerilhadeira/splide/4.png" alt="Cabo elétrico" />
+                    <div class="p-4">
+                      <p class="text-center text-sm text-gray-600">
+                        Oferece maior alcance durante a operação, permitindo maior liberdade de movimento na área de trabalho.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <SingleLargeImage
+      desktopImage="/src/assets/esmerilhadeira/desktop/i07-desktop.png"
+      mobileImage="/src/assets/esmerilhadeira/mobile/i07-mobile.png"
+      alt={productName}
+      class="relative"
+    />
+
+    <section class="flex flex-col items-center justify-center text-center">
+      <h2 class="--title max-w-[90%] md:max-w-[40%]">Execução precisa, potência e versatilidade em todos projetos</h2>
+      <p class="--body max-w-[90%] md:max-w-[60%] -mt-2">A potência e versatilidade necessárias para tirar projetos de corte e desbaste do papel é com a <span class="font-sans-bold">WAP ESMERILHADEIRA ANG 5" WF ES01</span>. Confie na WAP para transformar as tarefas com excelência e precisão em cada detalhe. </p>
+    </section>
+
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          perPage: 1.5,
+          perMove: 1,
+          focus: "center",
+          gap: "1rem",
+          autoplay: true,
+          interval: 3000,
+          pauseOnHover: true,
+          pauseOnFocus: true,
+          rewind: true,
+          width: "100%",
+          padding: { left: '1rem', right: '1rem' },
+          arrows: true,
+          pagination: false,
+          breakpoints: {
+            640: {
+              padding: { left: '0.5rem', right: '0.5rem' },
+            }
+          }
+        });
+        splide.mount();
+      });
+    </script>
+</body>
+</html>

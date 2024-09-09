@@ -1,0 +1,27 @@
+---
+// src/components/reusables/svg-title-description/index.astro 
+export interface Props {
+  svg: string;
+  title: string;
+  description: string;
+  alignment?: 'left' | 'center' | 'right';
+  class?: string;
+}
+
+const { svg, title, description, alignment = 'center'} = Astro.props;
+
+const alignmentClasses = {
+  left: 'md:text-left text-center items-center md:items-start',
+  center: 'md:text-center text-center items-center md:items-center',
+  right: 'md:text-right text-center items-center md:items-end',
+};
+
+---
+
+<div class={`${alignment === 'right' ? 'flex justify-end w-full' : 'w-full'} items-center justify-center flex`}>
+  <div class={`flex flex-col space-y-2 md:space-y-4 w-full px-12 md:px-2 max-w-[25rem] ${alignmentClasses[alignment]}`}>
+    <img src={svg} alt="Imagem do produto" class={`w-10 md:w-14 ${alignment === 'center' ? 'mx-auto' : ''} mb-2`} />
+    <h3 class="--title max-w-[70%] md:max-w-full" set:html={title} />
+    <p class="leading-tight --body md:-translate-y-2 max-w-[80%]">{description}</p>
+  </div>
+</div>

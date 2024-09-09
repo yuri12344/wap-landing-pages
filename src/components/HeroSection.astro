@@ -1,0 +1,37 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  desktopImageSrc: string;
+  mobileImageSrc: string;
+  alt: string;
+}
+
+const { title, subtitle, desktopImageSrc, mobileImageSrc, alt } = Astro.props;
+---
+
+<section class="mt-4 md:mt-8">
+  <div class="px-4 md:px-8 space-y-2 md:space-y-1">
+    <h2 class="m-0 uppercase font-unisans-book text-[18px] sm:text-[2rem] leading-tight">
+      <span class="font-book">{title}</span>
+    </h2>
+    <div class="flex items-center gap-2 md:gap-4">
+      <h2 class="m-0 uppercase whitespace-nowrap --title text-[20px] sm:text-[2rem]">
+        <span class="font-book">{subtitle}</span>
+      </h2>
+      <div class="h-0.5 w-full bg-zinc-400"></div>
+    </div>
+  </div>
+  <div class="w-full md:px-8 mt-4 md:mt-8 text-center xl:px-0">
+    <img
+      src={desktopImageSrc}
+      alt={alt}
+      class="hidden w-full md:block"
+    />
+    <img
+      src={mobileImageSrc}
+      alt={alt}
+      class="w-[90%] mt-5 md:hidden rounded-lg"
+    />
+  </div>
+</section>

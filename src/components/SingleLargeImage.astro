@@ -1,0 +1,15 @@
+---
+export interface Props {
+  desktopImage: string;
+  mobileImage: string;
+  alt: string;
+  class?: string;
+}
+
+const { desktopImage, mobileImage, alt, class: customClass = '' } = Astro.props;
+---
+
+<section class={`w-full flex justify-center ${customClass}`}>
+  <img src={desktopImage} alt={alt} class="w-full h-auto hidden md:block" />
+  <img src={mobileImage} alt={alt} class="w-full h-auto md:hidden max-w-[90%] mx-auto rounded-lg" />
+</section>

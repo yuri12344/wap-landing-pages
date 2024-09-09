@@ -1,0 +1,32 @@
+---
+export interface Props {
+  desktopImage: string;
+  mobileImage: string;
+  alt: string;
+  title: string;
+  description: string;
+  position?: 'left' | 'right';
+}
+
+const { 
+  desktopImage, 
+  mobileImage, 
+  alt, 
+  title, 
+  description, 
+  position = 'left'
+} = Astro.props as Props;
+
+const isImageLeft = position === 'left';
+---
+
+<div class="flex flex-col md:flex-row items-end md:space-x-10 mt-10 md:mt-0">
+  <img src={mobileImage} alt={alt} class="w-full md:hidden max-w-[90%] m-auto" />
+  <div class={`md:w-1/2 ${isImageLeft ? 'order-1' : 'order-2'}`}>
+    <img src={desktopImage} alt={alt} class="rounded-[4rem] w-full md:block hidden" />
+  </div>
+  <div class={`md:w-1/2 ${isImageLeft ? 'order-2' : 'order-1'} justify-center items-center flex flex-col`}>
+    <h2 class="--title max-w-[90%] w-full  text-start">{title}</h2>
+    <div class="--body max-w-[90%] text-start" set:html={description} />
+  </div>
+</div>

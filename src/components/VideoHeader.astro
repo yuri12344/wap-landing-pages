@@ -1,10 +1,10 @@
 ---
 export interface Props {
-  coverUrl: string;
-  videoSrc: string;
+  coverUrl?: string;
+  videoSrc?: string;
 }
 
-const { coverUrl, videoSrc } = Astro.props;
+const { coverUrl = '/src/assets/_video_cover.png', videoSrc = 'https://www.youtube.com/embed/leZQlQpRmRE?si=jcF9plvjyXxrCe8z?enablejsapi=1&autoplay=1' } = Astro.props;
 ---
 
 <header class="flex flex-col items-center">
