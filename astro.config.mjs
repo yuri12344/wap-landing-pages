@@ -4,7 +4,6 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 import react from '@astrojs/react';
 
 export default defineConfig({
-  staticRoutes: ['/esmerilhadeira'],
   integrations: [tailwind(), react()],
   compressHTML: false,
   vite: {
@@ -29,6 +28,9 @@ export default defineConfig({
     },
   },
   build: {
-    inlineStyles: true, // Inliner para CSS
+    outDir: 'dist',
+    inlineStyles: true,
+    assetsInlineLimit: 0,
+    inlineScripts: true,
   },
 });

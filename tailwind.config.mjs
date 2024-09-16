@@ -33,13 +33,13 @@ export default {
         function ({ addUtilities }) {
             addUtilities({
                 '.--body': {
-                    '@apply tracking-[-0.01em] text-[1.1rem]': '', // font-sans
+                    '@apply tracking-[-0.01em] text-[1.1rem]': '',
                 },
                 '.--body-bold': {
-                    '@apply text-[1.1rem]': '', //font-sans-bold
+                    '@apply text-[1.1rem]': '',
                 },
                 '.--title': {
-                    '@apply text-[1.2rem] sm:text-[2rem]': '', //font-sans-bold
+                    '@apply text-[1.2rem] sm:text-[2rem]': '',
                 },
             });
         },

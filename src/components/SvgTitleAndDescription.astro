@@ -21,6 +21,6 @@ const alignmentClasses = {
   <div class={`flex flex-col space-y-2 md:space-y-4 w-full px-12 md:px-2 max-w-[25rem] ${alignmentClasses[alignment]}`}>
     <img src={svg} alt="Imagem do produto" class={`w-10 md:w-14 ${alignment === 'center' ? 'mx-auto' : ''} mb-2`} />
     <h3 class="--title font-sans-bold max-w-[70%] md:max-w-full" set:html={title} />
-    <p class="leading-tight --body font-sans-book md:-translate-y-2 max-w-[55%]">{description}</p>
+    <p class="leading-tight --body font-sans-book md:-translate-y-2 max-w-[90%] md:max-w-[55%]">{description}</p>
   </div>
 </div>

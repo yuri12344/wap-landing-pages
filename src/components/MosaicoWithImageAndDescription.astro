@@ -12,8 +12,8 @@ const { title, description, desktopImage, mobileImage, alt } = Astro.props as Pr
 
 <section class="flex flex-col items-center bg-[#F4F4F4] rounded-2xl px-4 py-8 md:px-8 md:py-12">
   <div class="flex flex-col items-center justify-center mb-6 md:mb-10">
-    <h2 class="--title max-w-[80%] md:max-w-[90%] text-center mb-4">{title}</h2>
-    <p class="text-center max-w-[90%] -mt-5 md:mt-0 md:max-w-[80%]" set:html={description}></p>
+    <h2 class="--title font-sans-bold max-w-[50%] md:max-w-[90%] text-center mb-4" set:html={title}></h2>
+    <p class="--body max-w-[85%] text-[#434343] font-sans-book md:max-w-[60%] text-center" set:html={description}></p>
   </div>
   <div class="w-full">
     <img src={desktopImage} alt={alt} class="w-full h-auto hidden md:block rounded-lg" />

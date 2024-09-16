@@ -1,0 +1,40 @@
+---
+export interface Props {
+  desktopImageSrc?: string;
+  mobileImageSrc?: string;
+  title?: string;
+  code?: string;
+  subtitle?: string;
+  descriptionDesktop?: string;
+  descriptionMobile?: string;
+}
+
+// 
+const {
+  desktopImageSrc = "https://placehold.co/600x400",
+  mobileImageSrc = "https://placehold.co/400x300",
+  title = "Lorem ipsum dolor sit amet",
+  code = "ABC123",
+  subtitle = "Consectetur adipiscing elit",
+  descriptionDesktop = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  descriptionMobile = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+} = Astro.props;
+---
+
+<div>
+  <section class="flex flex-col md:flex-row items-center"> 
+    <div class="w-full md:w-1/2">
+      <img src={desktopImageSrc} alt="Product image" class="w-full hidden md:block">
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col justify-center">
+      <h1 class="md:uppercase text-2xl font-sans-book md:font-sans-bold md:text-5xl mb-2 text-center md:text-left">{title}</h1>
+      <span class="text-4xl md:text-3xl font-sans-bold md:font-sans-book text-center md:text-start mb-6 md:mb-4">{code}</span>
+      <div class="w-full md:hidden flex">
+        <img src={mobileImageSrc} alt="Product image" class="w-[90%] md:hidden mb-6 m-auto">
+      </div>
+      <span class="text-3xl m-auto md:m-0 font-sans-bold md:max-w-[60%] text-center md:text-start mb-4">{subtitle}</span>
+      <p class="text-base max-w-[75%] mt-2 --body font-sans-book text-center md:text-start hidden md:block">{descriptionDesktop}</p>
+      <p class="text-base --body font-sans-book -mt-2 text-center block md:hidden leading-relaxed max-w-[80%] mx-auto">{descriptionMobile}</p>
+    </div>
+  </section>
+</div>

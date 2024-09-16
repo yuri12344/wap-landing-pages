@@ -1,0 +1,26 @@
+---
+interface Props {
+  html: string;
+  desktopImageSrc: string;
+  mobileImageSrc: string;
+  alt: string;
+}
+
+const { html, desktopImageSrc, mobileImageSrc, alt } = Astro.props;
+---
+
+<section class="mt-4 md:mt-8">
+  <div class="px-4 md:px-8 space-y-2 md:space-y-1" set:html={html} />
+  <div class="w-full md:px-8 mt-4 md:mt-8 text-center xl:px-0">
+    <img
+      src={desktopImageSrc}
+      alt={alt}
+      class="hidden w-full md:block"
+    />
+    <img
+      src={mobileImageSrc}
+      alt={alt}
+      class="w-[90%] mt-5 md:hidden rounded-lg"
+    />
+  </div>
+</section>

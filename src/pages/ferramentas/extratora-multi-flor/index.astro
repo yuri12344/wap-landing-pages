@@ -1,284 +1,234 @@
 ---
 import '@/styles/global.css';
+const productName = 'Extradora Multi flor';
 
-import ThreeSvgsWithDescriptions from './components/3SvgsWithDescriptions.astro';
-
+import SvgWithTitleAndDescription from '@/components/SvgTitleAndDescription.astro';
+import ImageHero1Linha from '@/components/image-hero/image-hero-1-linha-titulo.astro';
 ---
 
 <html lang="pt-BR">
-<head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extratora Wap Multi Flor</title>
-    <meta name="description" content="Encontre as melhores ferramentas para seus projetos em nossa loja online. Amplas opções de ferramentas elétricas e manuais.">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" />
-</head>
-
-<body class="m-0 flex flex-col w-full items-center py-8 [&>*]:max-w-6xl [&>*]:w-full md:[&>*]:mb-20 [&>*]:mb-8 overflow-x-hidden ">
-
-  <ThreeSvgsWithDescriptions />
-
-      <section class="mt-8">
-        <div class="pl-8 md:space-y-1 md:px-8">
-          <h2 class="m-0 uppercase --title [font-weight:400] [fontFamily:FontBook_!important]">Garanta o conforto</h2>
-          <div class="flex items-center gap-4">
-            <h2 class="m-0 uppercase whitespace-nowrap [font-weight:400] [fontFamily:FontBook_!important] --title">
-              que <span class="--title">sua família merece!</span>
-            </h2>
-            <div class="h-0.5 w-full bg-zinc-400"></div>
-          </div>
-        </div>
-        <div class="w-full px-8 mt-8 text-center xl:px-0">
-          <img src="https://lojawap.vteximg.com.br/arquivos/desktop-AIRFLOWU2_i01-0.png?v=638472238841870000" alt="Imagem do produto" class="[display:none] w-full md:block" />
-          <img src="https://lojawap.vteximg.com.br/arquivos/mobile-AIRFLOWU2_i01-0.png?v=638472239088800000" alt="Imagem do produto" class="w-full md:hidden" />
-        </div>
+   <head>
+      <meta charset="utf-8" />
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Extratora Wap Multi Flor</title>
+      <meta name="description" content="Encontre as melhores ferramentas para seus projetos em nossa loja online. Amplas opções de ferramentas elétricas e manuais.">
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" />
+   </head>
+   <body class="m-0 flex flex-col w-full items-center py-8 [&>*]:max-w-6xl [&>*]:w-full lg:[&>*]:mb-20 [&>*]:mb-8 overflow-x-hidden">
+      
+      <section>
+         <div>
+            <section class="flex flex-col lg:flex-row items-center gap-x-10"> 
+            <div class="w-full lg:w-1/2">
+               <img src="/src/assets/extratora-multiflor/extratora-mult-flo-header.png" alt="Extratora WAP Multi Floor" class="w-[70%] m-auto lg:block hidden ">
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-col justify-center px-5">
+               <span class="text-2xl font-sans-book text-center lg:text-start mb-6 lg:mb-4">Extratora</span>
+               <h1 class="lg:uppercase font-sans-bold -mt-1 text-xl lg:text-[3rem] font-bold mb-2 text-center lg:text-left">WAP MULTI FLOOR</h1>
+               <img src="/src/assets/extratora-multiflor/extratora-mult-flo-header.png" alt="Extratora WAP Multi Floor" class="w-[70%] lg:hidden mb-6 mx-auto">
+               <h2 class="text-2xl font-sans-bold max-w-full text-center lg:text-start mt-10 mb-4">Economize tempo <br class="lg:hidden"> limpando seu piso!</h2>
+               <p class="text-base font-sans text-[#434343] max-w-[20rem] -mt-2 text-center lg:text-start text-center lg:m-0 m-auto">A limpadora de pisos a bateria 3 em 1, WAP MULTI FLOOR, chegou para tornar a experiência da limpeza do dia a dia uma tarefa mais fácil e prazerosa.</p>
+            </div>
+            </section>
+         </div>
+      </section>
+   
+      <section class="flex flex-col items-center gap-8 px-8 mt-12 lg:flex-row lg:items-start lg:gap-2 justify-evenly">
+         <SvgWithTitleAndDescription 
+            svg="/src/assets/replied/svgs/black/gotinhas.svg"
+            title="3 em 1"
+            description="Borrifa, esfrega e extrai a sujeira para uma limpeza mais rápida e eficiente."
+            alignment="center"
+            />
+         <SvgWithTitleAndDescription
+            svg="/src/assets/replied/svgs/black/raios.svg" 
+            title="Pulverização"
+            description="Bom para superfícies difíceis, sem esfregar e sem deixar manchas."
+            alignment="center"
+            />
+         <SvgWithTitleAndDescription
+            svg="/src/assets/replied/svgs/black/gota-auto-limpante.svg"
+            title="Autolimpeza"
+            description="A base de carregamento lava o rolo automaticamente, sem precisar tocar na sujeira."
+            alignment="center"
+         />
       </section>
 
-      <section class="md:h-[38rem] mt-8 md:mt-24 px-8">
-        <div class="relative w-full h-full">
-          <div class="left-0 flex flex-col items-center mb-10 text-center md:absolute md:mb-0 md:items-start md:text-start top-4">
+      <ImageHero1Linha
+         desktopImageSrc="/src/assets/extratora-multiflor/limpeza-sem-esforco.png"
+         mobileImageSrc="/src/assets/extratora-multiflor/limpeza-sem-esforco.png"
+         alt={productName}
+         html={`
             <div>
-              <img src="./imgs/replied/AIRFLOWU2_i06-0.png" alt="Imagem do produto" class="w-12 h-12 md:w-14 md:h-14" />
-              <div class="m-0 mt-6 --title">Reservatório de 2,3L</div>
+               <h2 class="m-0 uppercase font-unisans-book text-[18px] sm:text-[2rem] leading-tight flex items-center gap-2 lg:gap-4">
+                  <div class="font-sans-book">LIMPEZA</div> <div class="font-sans-bold">SEM ESFORÇO!</div>
+                  <div class="h-0.5 w-[40%] lg:w-[60%] bg-zinc-400"></div>
+               </h2>
             </div>
-            <p class="md:mt-4 mt-2 --body max-w-[18rem] lg:max-w-[16rem] leading-tight">
-              Proporciona até 23 horas de bem-estar e uso contínuo sem precisar reabastecer o recipiente com água.
-            </p>
-          </div>
-          <div class="left-0 flex flex-col items-center text-center md:absolute mb-10 md:items-start md:text-start top-[60%]">
-            <div>
-              <img src="./imgs/replied/AIRFLOWU2_i06-1.png" alt="Imagem do produto" class="w-12 h-12 md:w-14 md:h-14" />
-              <div class="m-0 mt-6 --title">Sistema Ultrassônico</div>
-            </div>
-            <p class="md:mt-4 mt-2 --body max-w-[18rem] lg:max-w-[16rem] leading-tight">
-              As vibrações em alta frequência do sistema ultrassônico proporcionam uma névoa fria e agradável durante o uso.
-            </p>
-          </div>
-          <div class="items-center justify-center w-full h-full mt-4 mb-12 [display:none] md:flex">
-            <img src="./imgs/desktop/AIRFLOWU2_i06-0.png" alt="Imagem do produto" class="object-contain object-center w-[40%]" />
-          </div>
-          <div class="right-0 flex flex-col items-center mb-10 text-center md:absolute md:mb-0 top-4 md:items-end">
-            <div class="md:text-end">
-              <img src="./imgs/replied/AIRFLOWU2_i06-2.png" alt="Imagem do produto" class="w-12 h-12 md:w-14 md:h-14" />
-              <div class="m-0 mt-6 --title">Silencioso</div>
-            </div>
-            <p class="md:mt-4 mt-2 --body max-w-[18rem] lg:max-w-[16rem] md:text-end">
-              Perfeito para noites de sono tranquilas, o umidificador de ar WAP é silencioso e econômico.
-            </p>
-          </div>
-          <div class="right-0 flex flex-col items-center text-center md:absolute mb-10 top-[60%] md:items-end">
-            <div class="md:text-end">
-              <img src="./imgs/replied/AIRFLOWU2_i06-3.png" alt="Imagem do produto" class="w-12 h-12 md:w-14 md:h-14" />
-              <div class="m-0 mt-6 --title">BIVOLT automático</div>
-            </div>
-            <p class="md:mt-4 mt-2 --body max-w-[18rem] lg:max-w-[16rem] leading-tight md:text-end">
-              Tenha liberdade para usar seu umidificado onde quiser com segurança.
-            </p>
-          </div>
+         `}
+      />
+      <section class="flex flex-col lg:flex-row items-center justify-between lg:px-8 py-8">
+        <div class="lg:w-1/2 mb-6 lg:mb-0 lg:order-1 order-2">
+          <h2 class="text-2xl lg:text-start text-center --title font-sans-bold lg:text-3xl font-bold mb-4">Mais uma inovação para sua casa!</h2>
+          <p class="lg:text-start text-center --body font-sans-book lg:text-lg max-w-[80%] m-auto lg:m-0">
+            Com alto poder de sucção e escova elétrica rotativa, a extratora pode sugar sujeiras úmidas, sendo a opção ideal também para quem tem pets, recolhendo com facilidade pelos de animais e cabelos, enquanto sua escova rotativa auxilia na esfregação, secagem e polimento do piso.
+          </p>
+        </div>
+        <div class="lg:w-1/2 flex justify-center lg:order-2 order-1">
+          <img 
+            src="/src/assets/extratora-multiflor/mais-uma-invacao-para-sua-casa.png" 
+            alt="Demonstração da extratora Multi Flor" 
+            class="w-full rounded-lg lg:translate-y-10 lg:mt-0 mt-14"
+          />
         </div>
       </section>
-      <section class="w-full md:mt-24 max-h-[44rem]">
-        <div class="w-full h-full">
-          <img src="https://lojawap.vteximg.com.br/arquivos/desktop-AIRFLOWU2_i05-0.png?v=638547650174700000" alt="Imagem do produto" class="[display:none] object-cover object-center w-full sm:block" />
-          <img src="https://lojawap.vteximg.com.br/arquivos/mobile-AIRFLOWU2_i05-0.png?v=638547649778300000" alt="Imagem do produto" class="object-cover object-center w-full sm:[display:none]" />
-        </div>
+      
+      <section class="lg:hidden flex flex-col items-center justify-center">
+         <img src="/src/assets/extratora-multiflor/ideal-para-limpeza.png" alt="Extratora WAP Multi Floor" class="w-full m-auto">
       </section>
-      <section class="px-8 mt-8">
-        <div class="flex flex-col items-center gap-12 md:flex-row">
-          <div class="relative w-3/4 md:w-1/2">
-            <img src="./imgs/desktop/AIRFLOWU2_i04-0.png" alt="Imagem do produto" class="w-full" />
-          </div>
-          <div class="w-full space-y-4 md:w-1/2">
-            <h3 class="pr-8 m-0 --title">Transforme sua casa em um refúgio de bem-estar!</h3>
-            <p class="--body">
-              Compacto, o <span class="font-semibold">umidificador de ar ultrassônico WAP</span> não apenas melhora a qualidade do ar, para que você e sua
-              família respirem aliviados em todas as estações do ano, mas também contribui para a harmonia do ambiente.
-            </p>
-            <p class="--body">
-              Através de vibrações ultrassônicas, o <span class="font-semibold">Air Flow U2</span> se torna o melhor parceiro para noites de sono tranquilas.
-              Com <span class="font-semibold">desligamento automático</span> para facilitar a rotina, são 23 horas de autonomia, onde a névoa de vapor d’água é
-              expelida no cômodo através do bico direcional
-            </p>
-          </div>
-        </div>
+      <section class="flex flex-col lg:mt-24 -mt-8">
+         <div class="bg-[#006CAB] py-5 lg:p-10 lg:rounded-2xl flex flex-col lg:flex-row  lg:items-center lg:h-[20rem] relative" >
+            <div class="top-0 left-0 w-1/2">
+               <img src="/src/assets/extratora-multiflor/ideal-para-limpeza.png" alt="Extratora WAP Multi Floor" class="-translate-y-[8.2rem] hidden lg:block -translate-x-[2.7rem]">
+            </div>
+            <div class="lg:w-1/2 lg:text-start text-center">
+               <p class="text-white font-sans-book --body">Pensando em trazer mais mobilidade e praticidade, a limpadora é ideal para ser utilizada em superfícies como: <span class="font-sans-bold">madeira, azulejo, porcelanato, laminados, mármore, granito (pisos frios em geral)</span></p>
+            </div>
+         </div>
+         <div class="bg-[#E5E5E5] flex flex-col pb-20 pt-5 -mt-5 rounded-2xl">
+            <div class="flex flex-col items-center justify-center mt-16">
+               <img src="/src/assets/extratora-multiflor/ideal-para-limpeza-em-icons.png" alt="Extratora WAP Multi Floor" class="hidden lg:block">
+               <img src="/src/assets/extratora-multiflor/ideal-para-limpeza-em-icons-mobile.png" alt="Extratora WAP Multi Floor" class="lg:hidden w-[90%]">
+            </div>
+         </div>
+       </section>
+
+       <section class="flex flex-col lg:flex-row mt-10">
+         <div class="lg:w-1/2 w-full flex flex-col justify-center">
+            <img src="/src/assets/extratora-multiflor/tecnologia-inteligente-para-limpeza.png" alt="" class="w-[80%] m-auto">
+         </div>
+         <div class="lg:w-1/2 w-full">
+            <h1 class="--title max-w-[50%] lg:max-w-[80%] lg:text-start text-center m-auto lg:m-0 lg:mt-0 mt-10 font-sans-bold text-2xl">Tecnologia inteligente para limpeza eficiente</h1>
+            <p class="--body text-[#434343] lg:mt-5 mt-5 font-sans-book lg:text-start text-center m-auto lg:m-0 max-w-[80%]">O display de led compartilha informações úteis em tempo real, como o nível da bateria, modo de limpeza, indicativo de tanque de água suja cheio e indicativo de tanque de água limpa vazio. Com uma bateria de lithium, desfrute de até 27 minutos de autonomia, com potência de 300W.</p>
+         </div>
       </section>
 
-      <section class="relative">
-        <div class="[display:none] px-8 sm:block">
-          <div class="bg-[#A5C5ED] [display:none] md:block rounded-l-[14rem] right-0 absolute bottom-0 w-1/2 h-[100%]"></div>
-          <div class="relative z-10 [display:none] w-full h-full mt-4 mb-12 md:block">
-            <img src="./imgs/desktop/AIRFLOWU2_i08-0.png" alt="Imagem do produto" class="relative w-full" />
-            <div class="absolute top-0 left-0 w-full h-full">
-              <p class="absolute top-[12.5%] text-[16px] lg:text-[18px] leading-tight text-black font-book m-0 max-w-[24%]">
-                O <span class="font-semibold">bico direcional</span> coloca em suas mãos a decisão da direção onde a névoa irá ser expelida.
-              </p>
-              <p class="absolute bottom-[19.5%] text-[16px] lg:text-[18px] leading-tight text-black font-book m-0 max-w-[28%]">
-                O umidificador <span class="font-semibold">desliga automaticamente</span> quando o nível de água está baixo, evitando danos ao aparelho.
-              </p>
-              <p class="absolute top-[88.5%] text-[16px] lg:text-[18px] leading-tight text-black font-book m-0 max-w-[28%]">
-                O <span class="font-semibold">botão regulador</span> proporciona controle total da sua experiencia, permitindo o ajuste ideal da intensidade da
-                névoa em cada ambiente.
-              </p>
-              <p class="absolute bottom-[64%] text-[16px] text-black lg:text-[18px] right-0 font-book m-0 leading-tight max-w-[31%] text-end">
-                A superfície do <span class="font-semibold">Air Flow U2</span> é customizável com <span class="font-semibold">adesivos destacáveis</span>, que
-                possuem a temática do fundo do mar para as crianças soltarem a imaginação.
-              </p>
-              <p class="absolute bottom-[30%] text-[16px] text-black lg:text-[18px] right-0 font-book m-0 leading-tight max-w-[26%] text-end">
-                Utilize o <span class="font-semibold">compartimento de aromas</span> para adicionar fragrâncias ou até óleos terapêuticos, e viva uma
-                experiência única de conforto.
-              </p>
-              <p class="absolute top-[83.5%] text-black text-[16px] lg:text-[18px] right-0 font-book m-0 leading-tight max-w-[28%] text-end">
-                Além de umidificar, o Air Flow U2 pode ser utilizado como <span class="font-semibold">luminária</span>, deixando o ambiente mais confortável com
-                a luz de LED 4000K suave.
-              </p>
+      <section class="mt-10 hidden lg:block">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center text-center max-w-[90%]">
+              <img src="/src/assets/extratora-multiflor/duas-velocidades.png" alt="Duas velocidades" class="w-full mb-4 rounded-lg"/>
+              <h3 class="--title font-sans-bold mb-2">Duas velocidades</h3>
+              <p class=" --body font-sans-book text-[#434343] w-[80%]">Escolha a velocidade ideal para cada tipo de piso e sujeira.</p>
+            </div>
+            <div class="flex flex-col items-center text-center max-w-[90%]">
+              <img src="/src/assets/extratora-multiflor/dois-recipientes.png" alt="Dois recipientes" class="w-full mb-4 rounded-lg"/>
+              <h3 class="--title font-sans-bold mb-2">Dois recipientes</h3>
+              <p class=" --body font-sans-book text-[#434343] w-[80%]">Recipientes separados para extração (água suja) e outro para água limpa (pulverização).</p>
+            </div>
+            <div class="flex flex-col items-center text-center max-w-[90%]">
+              <img src="/src/assets/extratora-multiflor/escova-rotativa.png" alt="Escova rotativa" class="w-full mb-4 rounded-lg"/>
+              <h3 class="--title font-sans-bold mb-2">Escova rotativa</h3>
+              <p class="--body font-sans-book text-[#434343] w-[80%]">Com escova elétrica rotativa pode sugar sujeiras úmidas, auxilia na esfregação, secagem e polimento do piso.</p>
             </div>
           </div>
         </div>
-        
-        <div class="splide__wrapper mt-8 md:h-[28rem] h-[20rem] w-full overflow-hidden md:hidden">
-          <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+      </section>
+      <section class="splide__wrapper mt-8 overflow-hidden lg:hidden border">
+         <div class="splide" role="group" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="card">
-                    <img class="rounded-lg card__image" src="./imgs/mobile/AIRFLOWU2_i08-0.png" alt="Imagem do produto" />
-                    <div class="card__content">
-                      <div class="card__description --body">
-                        O <span class="font-semibold">bico direcional</span> coloca em suas mãos a decisão da direção onde a névoa irá ser expelida.
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img class="rounded-lg card__image" src="./imgs/mobile/AIRFLOWU2_i08-1.png" alt="Imagem do produto" />
-                    <div class="card__content">
-                      <div class="card__description --body">
-                        O umidificador <span class="font-semibold">desliga automaticamente</span> quando o nível de água está baixo, evitando danos ao aparelho.
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img class="rounded-lg card__image" src="./imgs/mobile/AIRFLOWU2_i08-2.png" alt="Imagem do produto" />
-                    <div class="card__content">
-                      <div class="card__description --body">
-                        O <span class="font-semibold">botão regulador</span> proporciona controle total da sua experiencia, permitindo o ajuste ideal da
-                        intensidade da névoa em cada ambiente.
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img class="rounded-lg card__image" src="./imgs/mobile/AIRFLOWU2_i08-3.png" alt="Imagem do produto" />
-                    <div class="card__content">
-                      <div class="card__description --body">
-                        A superfície do Air Flow U2 é customizável com <span class="font-semibold">adesivos destacáveis</span> para as crianças soltarem a
-                        imaginação.
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img class="rounded-lg card__image" src="./imgs/mobile/AIRFLOWU2_i08-4.png" alt="Imagem do produto" />
-                    <div class="card__content">
-                      <div class="px-2 card__description --body">
-                        Utilize o <span class="font-semibold">compartimento de aromas</span> para adicionar fragrâncias ou até óleos terapêuticos, e viva uma
-                        experiência única de conforto.
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img class="rounded-lg card__image" src="./imgs/mobile/AIRFLOWU2_i08-5.png" alt="Imagem do produto" />
-                    <div class="card__content">
-                      <div class="card__description --body">
-                        Além de umidificar, o Air Flow U2 pode ser utilizado como <span class="font-semibold">luminária</span>, deixando o ambiente mais
-                        confortável com a luz de LED 4000K suave.
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+               <ul class="splide__list">
+                  <li class="splide__slide">
+                     <div class="card">
+                        <img class="rounded-lg card__image" src="/src/assets/extratora-multiflor/duas-velocidades.png" alt="Duas velocidades" />
+                        <div class="card__content">
+                           <div class="card__description --body">
+                              <h3 class="--title font-sans-bold mb-2">Duas velocidades</h3>
+                              <p class="--body font-sans-book text-[#434343]">Escolha a velocidade ideal para cada tipo de piso e sujeira.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="splide__slide">
+                     <div class="card">
+                        <img class="rounded-lg card__image" src="/src/assets/extratora-multiflor/dois-recipientes.png" alt="Dois recipientes" />
+                        <div class="card__content">
+                           <div class="card__description --body">
+                              <h3 class="--title font-sans-bold mb-2">Dois recipientes</h3>
+                              <p class="--body font-sans-book text-[#434343]">Recipientes separados para extração (água suja) e outro para água limpa (pulverização).</p>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="splide__slide">
+                     <div class="card">
+                        <img class="rounded-lg card__image" src="/src/assets/extratora-multiflor/escova-rotativa.png" alt="Escova rotativa" />
+                        <div class="card__content">
+                           <div class="card__description --body">
+                              <h3 class="--title font-sans-bold mb-2">Escova rotativa</h3>
+                              <p class="--body font-sans-book text-[#434343]">Com escova elétrica rotativa pode sugar sujeiras úmidas, auxilia na esfregação, secagem e polimento do piso.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
             </div>
-          </div>
-        </div>
+         </div>
       </section>
-      <section class="mt-8 md:my-24">
-        <div class="flex flex-col items-center gap-12 md:flex-row">
-          <div class="w-full px-8 space-y-4 md:w-1/2">
-            <h3 class="m-0 --title">Iluminação suave para a <br />rotina noturna</h3>
-            <p class="--body">
-              A combinação entre funcionalidade e iluminação do <span class="font-semibold">Air Flow U2</span> o torna não apenas um umidificador, mas também um
-              elemento decorativo. A função “Luminária” integrada ao design do aparelho emite uma luz suave e difusa, proporcionando conforto visual e aconchego
-              ao ambiente.
-            </p>
-          </div>
-          <div class="relative w-full md:w-1/2">
-            <img src="https://lojawap.vteximg.com.br/arquivos/desktop-AIRFLOWU2_i02-0.png?v=638547650024830000" alt="Imagem do produto" class="w-full [display:none] md:block" />
-            <img src="https://lojawap.vteximg.com.br/arquivos/mobile-AIRFLOWU2_i06-0.png?v=638547649612430000" alt="Imagem do produto" class="w-full md:hidden" />
-          </div>
-        </div>
+
+      <section class="flex flex-col lg:flex-row mt-[10rem]">
+         <div class="lg:w-1/2 mt-10">
+            <h1 class="--title text-center m-auto lg:m-0 lg:text-start font-sans-bold lg:max-w-[80%] max-w-[55%]">Mais eficiência e praticidade na hora da limpeza</h1>
+            <p class="--body font-sans-book m-auto lg:text-start text-center mt-10 lg:m-0 lg:max-w-[80%] max-w-[70%]">Conjunto completo de acessórios para todas as necessidades.</p>
+         </div>
+         <div class="lg:w-1/2 relative mt-[15rem] lg:mt-0 flex flex-col items-center justify-center lg:max-h-[15rem] max-h-[10rem] bg-[#006CAB] rounded-[10rem]">
+            <div id="left-arrow" class="absolute z-100 left-10 cursor-pointer">
+               <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18.894" cy="18.894" r="18.894" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 0 37.7881)" fill="#D9D9D9"/>
+                  <path d="M12.4484 19.6769C11.8626 19.0911 11.8626 18.1414 12.4484 17.5556L21.9943 8.00962C22.5801 7.42384 23.5298 7.42384 24.1156 8.00962C24.7014 8.59541 24.7014 9.54516 24.1156 10.1309L15.6304 18.6162L24.1156 27.1015C24.7014 27.6873 24.7014 28.637 24.1156 29.2228C23.5298 29.8086 22.5801 29.8086 21.9943 29.2228L12.4484 19.6769ZM14.2949 20.1162L13.509 20.1162L13.509 17.1162L14.2949 17.1162L14.2949 20.1162Z" fill="white"/>
+               </svg>
+            </div>
+            <div id="right-arrow" class="absolute z-100 right-10 cursor-pointer">
+               <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotate-180">
+                  <circle cx="18.894" cy="18.894" r="18.894" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 0 37.7881)" fill="#D9D9D9"/>
+                  <path d="M12.4484 19.6769C11.8626 19.0911 11.8626 18.1414 12.4484 17.5556L21.9943 8.00962C22.5801 7.42384 23.5298 7.42384 24.1156 8.00962C24.7014 8.59541 24.7014 9.54516 24.1156 10.1309L15.6304 18.6162L24.1156 27.1015C24.7014 27.6873 24.7014 28.637 24.1156 29.2228C23.5298 29.8086 22.5801 29.8086 21.9943 29.2228L12.4484 19.6769ZM14.2949 20.1162L13.509 20.1162L13.509 17.1162L14.2949 17.1162L14.2949 20.1162Z" fill="white"/>
+               </svg>
+            </div>
+            <img src="/src/assets/extratora-multiflor/slider-images/bateria.png" id="image-slider-holder" alt="" class="lg:-translate-y-[5rem] -translate-y-[6rem] lg:w-[20rem] w-[15rem] select-none">
+            <h1 class="text-white absolute bottom-0 font-sans-bold text-2xl font-bold select-none" id="image-slider-title">Bateria</h1>
+         </div>
       </section>
-      <section class="px-8 mt-8 md:mb-14">
-        <div class="flex flex-col-reverse items-center gap-12 md:gap-20 md:flex-row-reverse">
-          <div class="w-full space-y-4 md:w-1/2">
-            <h3 class="m-0 --title">
-              Facilidade, diversão <br />
-              e bem-estar
-            </h3>
-            <p class="--body">
-              O umidificador de ar WAP possui uma tecnologia avançada de emissão de névoa por vibrações ultrassônicas que coloca o controle da intensidade nas
-              suas mãos. No topo do aparelho, próximo à tampa de reabastecimento, o <span class="font-semibold">bico direcional</span> permite o ajuste da névoa
-              na direção desejada com conforto e praticidade.
-            </p>
-          </div>
-          <div class="relative w-2/3 md:w-1/3">
-            <img src="./imgs/desktop/AIRFLOWU2_i07-0.png" alt="Imagem do produto" class="w-full [display:none] md:block" />
-            <img src="./imgs/mobile/AIRFLOWU2_i07-0.png" alt="Imagem do produto" class="w-full md:hidden" />
-          </div>
-        </div>
+
+
+      <section class="hidden lg:flex flex-col mt-20 w-full"> 
+         <h1 class="--title font-sans-bold max-w-[70%] m-auto text-center">
+            Seu design leve e sem fio o torna mais fácil de transportar. 
+            Limpe cada canto da sua casa sem esforço!
+         </h1>
+         <div class="mt-10">
+            <img src="/src/assets/extratora-multiflor/limpe-cada-canto-da-sua-casa.png" alt="" class="w-full">
+         </div>
       </section>
-      <section class="px-8 mt-8">
-        <div class="flex flex-col items-center gap-12 md:gap-20 md:flex-row">
-          <div class="w-full space-y-4">
-            <h3 class="m-0 --title">
-              Dias secos não precisam <br class="md:hidden" />
-              mais ser problema
-            </h3>
-            <p class="--body">
-              A baixa umidade não deve mais ser motivo de desconforto! Tenha sensação de segurança, conforto e bem-estar com um grande aliado para a sua saúde e
-              da sua família.
-            </p>
-            <p class="--body">
-              <span class="font-semibold">Umidificador de Ar WAP Air Flow U2</span>: ótimo custo-benefício para dias agradáveis e noites de sonos tranquilas,
-              levando a 0 as chances de quadros de sinusite, rinite e de congestão nasal.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script defer>
-      document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide(".splide", {
-          type: "loop",
-          perPage: 1,
-          perMove: 2,
-          focus: "center",
-          //padding: '5rem',
-          gap: "15px",
-          rewind: true,
-          width: "min(190px, 70% - 60px)",
-        });
-        splide.mount();
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-  </body>
+
+      </main>
+      <script is:inline>
+         document.addEventListener("DOMContentLoaded", function () {
+           var splide = new Splide(".splide", {
+             type: "loop",
+             perPage: 1.5,
+             perMove: 2,
+             focus: "center",
+             padding: '1rem',
+             gap: '5rem',
+             rewind: true,
+             width: "min(490px, 100%)",
+           });
+           splide.mount();
+         });
+      </script>
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+      <script is:inline src="/src/pages/ferramentas/extratora-multi-flor/javascript/mini-slider.js"></script>
+   </body>
 </html>
