@@ -1,10 +1,7 @@
-import react from '@astrojs/react';
-
 
 /** @type {import('tailwindcss').Config} */
 export default {
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-    integrations: [react()],
     theme: {
         extend: {
             fontFamily: {

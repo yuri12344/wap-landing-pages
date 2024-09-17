@@ -1,42 +1,18 @@
 {
-  "name": "landing-pages",
+  "name": "@example/basics",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev": "astro dev --port 3000",
-    "start": "astro dev  --port 3000",
-    "build": "astro check && astro build",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.3",
-    "@astrojs/react": "^3.6.2",
-    "@astrojs/tailwind": "^5.1.0",
-    "@radix-ui/react-icons": "^1.3.0",
-    "@splidejs/splide": "^4.1.4",
-    "astro": "^4.15.1",
-    "astro-icon": "^1.1.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwindcss": "^3.4.10",
-    "typescript": "^5.5.4",
-    "vite": "^5.4.3",
-    "vite-plugin-static-copy": "^1.0.6"
-  },
-  "devDependencies": {
-    "@chromatic-com/storybook": "^1.9.0",
-    "@storybook/addon-essentials": "^8.2.9",
-    "@storybook/addon-interactions": "^8.2.9",
-    "@storybook/addon-links": "^8.2.9",
-    "@storybook/addon-onboarding": "^8.2.9",
-    "@storybook/blocks": "^8.2.9",
-    "@storybook/react": "^8.2.9",
-    "@storybook/react-vite": "^8.2.9",
-    "@storybook/test": "^8.2.9",
-    "@vitejs/plugin-react": "^4.3.1",
-    "storybook": "^8.2.9"
+    "@astrojs/tailwind": "^3.0.1",
+    "astro": "^2.0.6",
+    "tailwindcss": "^3.2.4"
   }
 }
